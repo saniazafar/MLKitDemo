@@ -1,0 +1,6 @@
+module Pods_MLKitDemo {
+  umbrella header "Pods-MLKitDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

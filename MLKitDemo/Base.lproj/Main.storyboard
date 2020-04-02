@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,95 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MLKitDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placehoder_image" translatesAutoresizingMaskIntoConstraints="NO" id="BAB-AU-1qy">
+                                <rect key="frame" x="0.0" y="92" width="414" height="524"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pK-VJ-LYJ">
+                                <rect key="frame" x="0.0" y="814" width="414" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Pvz-Z8-yva"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Recognize Text">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recognizeText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="35n-oK-Foz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Detector" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDx-1b-Z5z">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="x5L-Xf-ucJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="bVX-Al-bXV">
+                                <rect key="frame" x="77" y="714" width="260" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ake-Tt-1B5" userLabel="photoLibrary">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="0lW-E3-xdA"/>
+                                            <constraint firstAttribute="height" constant="80" id="V9X-mo-Y1T"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_upload"/>
+                                        <connections>
+                                            <action selector="uploadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jgp-re-evM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpJ-ih-w19" userLabel="camera">
+                                        <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="TB9-bU-ndD"/>
+                                            <constraint firstAttribute="height" constant="80" id="f9d-WU-SEY"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_camera"/>
+                                        <connections>
+                                            <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nb5-9V-YDb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4pK-VJ-LYJ" secondAttribute="bottom" id="3Jc-2O-jAw"/>
+                            <constraint firstItem="HDx-1b-Z5z" firstAttribute="leading" secondItem="BAB-AU-1qy" secondAttribute="leading" id="AUH-5L-gQn"/>
+                            <constraint firstItem="HDx-1b-Z5z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Csj-2f-4IC"/>
+                            <constraint firstItem="bVX-Al-bXV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JvM-IR-62z"/>
+                            <constraint firstItem="4pK-VJ-LYJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QnF-LU-5YH"/>
+                            <constraint firstItem="BAB-AU-1qy" firstAttribute="top" secondItem="HDx-1b-Z5z" secondAttribute="bottom" constant="8" id="Vq3-iE-asb"/>
+                            <constraint firstItem="4pK-VJ-LYJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WEm-dh-z1E"/>
+                            <constraint firstItem="BAB-AU-1qy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eU6-cg-6U8"/>
+                            <constraint firstItem="4pK-VJ-LYJ" firstAttribute="top" secondItem="bVX-Al-bXV" secondAttribute="bottom" constant="20" id="fPb-th-MRi"/>
+                            <constraint firstItem="HDx-1b-Z5z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mDR-A5-02k"/>
+                            <constraint firstItem="HDx-1b-Z5z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ohj-Cq-knh"/>
+                            <constraint firstItem="BAB-AU-1qy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="smJ-jl-uQe"/>
+                            <constraint firstItem="BAB-AU-1qy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.584821" id="uYS-Um-EDn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="BAB-AU-1qy" id="8sT-m5-whU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_camera" width="256" height="256"/>
+        <image name="icon_upload" width="256" height="256"/>
+        <image name="placehoder_image" width="360" height="480"/>
+    </resources>
 </document>
