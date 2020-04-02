@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		1AAF1AA32434EFAB00E93657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF1AA12434EFAB00E93657 /* LaunchScreen.storyboard */; };
 		1AB96B0024352C2E00E842E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AB96AFF24352C2E00E842E2 /* GoogleService-Info.plist */; };
 		1AB96B0224361D7100E842E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB96B0124361D7100E842E2 /* Assets.xcassets */; };
-		1AB96B062436540800E842E2 /* IMG_34BC3F040337-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1AB96B052436540800E842E2 /* IMG_34BC3F040337-1.jpeg */; };
+		1AB96B0B2436614200E842E2 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 1AB96B0A2436614200E842E2 /* Images */; };
 		E19D850DC21F68757DB65906 /* libPods-MLKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 671DBD4BAD62B4EC12AAED64 /* libPods-MLKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		1AAF1AA42434EFAB00E93657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AB96AFF24352C2E00E842E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1AB96B0124361D7100E842E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
-		1AB96B052436540800E842E2 /* IMG_34BC3F040337-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "IMG_34BC3F040337-1.jpeg"; path = "../../../../Downloads/IMG_34BC3F040337-1.jpeg"; sourceTree = "<group>"; };
+		1AB96B0A2436614200E842E2 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		671DBD4BAD62B4EC12AAED64 /* libPods-MLKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MLKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7779909F1EE2A3BB9D66C18 /* Pods-MLKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKitDemo.release.xcconfig"; path = "Target Support Files/Pods-MLKitDemo/Pods-MLKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FBDB55E7D20D94914206B458 /* Pods-MLKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-MLKitDemo/Pods-MLKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		1AAF1A8A2434EFAB00E93657 = {
 			isa = PBXGroup;
 			children = (
-				1AB96B052436540800E842E2 /* IMG_34BC3F040337-1.jpeg */,
+				1AB96B0A2436614200E842E2 /* Images */,
 				1AAF1A952434EFAB00E93657 /* MLKitDemo */,
 				1AAF1A942434EFAB00E93657 /* Products */,
 				811840DDB41BDDADC2589551 /* Pods */,
@@ -156,9 +156,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB96B0B2436614200E842E2 /* Images in Resources */,
 				1AAF1AA32434EFAB00E93657 /* LaunchScreen.storyboard in Resources */,
 				1AB96B0024352C2E00E842E2 /* GoogleService-Info.plist in Resources */,
-				1AB96B062436540800E842E2 /* IMG_34BC3F040337-1.jpeg in Resources */,
 				1AB96B0224361D7100E842E2 /* Assets.xcassets in Resources */,
 				1AAF1A9E2434EFAB00E93657 /* Main.storyboard in Resources */,
 			);
